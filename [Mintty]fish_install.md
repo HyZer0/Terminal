@@ -9,12 +9,14 @@
 
 ## ターミナル立ち上げ時のログインシェルの変更
 1. 「passwd」を作成
-```bash
+```shell
 $ mkpasswd > /etc/passwd
 ```
 2. 自身のユーザのみ「/bin/fish」に書き換える 
-```bash
+```shell
 $ emacs /etc/passwd
+```shell
+/home/<username>:/bin/fish
 ```
 
 \#　通常のLinux環境では「chsh」を使用して簡単に設定できるが、CygwinやMinttyでは使用できないため、「/etc/passwd」にて設定する必要がある。
