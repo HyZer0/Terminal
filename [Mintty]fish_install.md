@@ -15,6 +15,7 @@ $ mkpasswd > /etc/passwd
 2. 自身のユーザのみ「/bin/fish」に書き換える 
 ```shell
 $ emacs /etc/passwd
+
 ```shell
 /home/<username>:/bin/fish
 ```
